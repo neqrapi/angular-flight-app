@@ -1,0 +1,14 @@
+.navbar {
+  background-color: #47A7FF;
+  justify-content: space-between;
+  display: flex;
+  width: 60%;
+  align-items: center;
+
+}
+
+
+.navbar-span {
+  background-color: #319CFF;
+  color: white;
+}
