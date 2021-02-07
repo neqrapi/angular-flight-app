@@ -20,16 +20,23 @@ import { MatSortModule } from '@angular/material/sort';
 
 
 import { MatSelectModule } from '@angular/material/select';
-import { from } from 'rxjs';
+import { MatDatepickerInput, MatDatepickerModule } from '@angular/material/datepicker';
 import { HttpClientModule } from '@angular/common/http';
 import { NavbarComponent } from './navbar/navbar.component';
+import { SearchComponent } from './search/search.component';
+import { FooterComponent } from './footer/footer.component';
+import { MatNativeDateModule } from '@angular/material/core';
 @NgModule({
   declarations: [
     AppComponent,
 
     FlightTableComponent,
 
-    NavbarComponent
+    NavbarComponent,
+
+    SearchComponent,
+
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -46,8 +53,13 @@ import { NavbarComponent } from './navbar/navbar.component';
     MatSortModule,
     MatFormFieldModule,
     MatInputModule,
+    HttpClientModule,
     MatSelectModule,
-    HttpClientModule
+    MatDatepickerModule,
+    MatNativeDateModule,
+
+
+
   ],
   providers: [],
   bootstrap: [AppComponent]

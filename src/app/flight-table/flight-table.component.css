@@ -1,1 +1,9 @@
+table {
+  width: 100%;
+}
 
+.dupa::before {
+  /* background-image: url("../../assets/arrow-right-circle.svg"); */
+  content: url('../../assets/arrow-right-circle.svg');
+
+}

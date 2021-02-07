@@ -1,0 +1,30 @@
+<form>
+  <mat-form-field appearance="fill">
+    <mat-label> City From</mat-label>
+    <mat-select name="element">
+      <mat-option *ngFor="let element of listOfElements" [value]="element.arrival">
+        {{element.arrival}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>City To</mat-label>
+    <mat-select name="element">
+      <mat-option *ngFor="let element of listOfElements" [value]="element.departure">
+        {{element.departure}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field class="example-full-width" appearance="fill">
+  <mat-label>Data wylotu</mat-label>
+  <input matInput [matDatepickerFilter]="myFilter" [matDatepicker]="picker">
+  <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+  <mat-datepicker #picker></mat-datepicker>
+</mat-form-field>
+<mat-form-field class="example-full-width" appearance="fill">
+  <mat-label>Data Powrotu</mat-label>
+  <input matInput [matDatepickerFilter]="myFilter" [matDatepicker]="picker">
+  <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+  <mat-datepicker #picker></mat-datepicker>
+</mat-form-field>
+</form>

@@ -1,14 +1,37 @@
 .navbar {
   background-color: #47A7FF;
   justify-content: space-between;
-  display: flex;
-  width: 60%;
-  align-items: center;
 
+
+  align-items: center;
+  margin-top: 15px;
 }
 
 
 .navbar-span {
   background-color: #319CFF;
   color: white;
+  justify-content: center;
+  height: 36px;
+
+}
+
+.navbar-cart {
+  background-color: #319CFF;
+  color: white;
+  justify-content: center;
+  height: 36px;
+}
+
+.navbar-left {
+  justify-content: left;
+}
+
+.navbar-right {
+  justify-content: right;
+}
+
+.navbar-span-position {
+  margin-left: 15px;
+  margin-right: 15px;
 }
